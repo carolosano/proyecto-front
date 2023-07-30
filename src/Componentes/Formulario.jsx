@@ -4,7 +4,7 @@ import { useForm } from 'react-hook-form'
 import axios from 'axios';
 const Formulario = () =>{
     
-    const URL = import.meta.env.VITE_URL;
+    const URL = 'https://proyecto-back-sigma.vercel.app/usuarios';
 
     
     const { register, handleSubmit, reset, formState: { errors } } = useForm({
