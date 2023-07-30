@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 
 const Clientes = () =>{
 
-    const DATOS = import.meta.env.VITE_DATOS;
+    const DATOS = import.meta.env.VITE_DATOS
 
     console.log(DATOS);
 
@@ -17,10 +17,10 @@ const Clientes = () =>{
             console.log(res.data);
             setApiData(res.data.personas)
         })
-    
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
-    
+    //pasar los datos para update mediante el localstorage
     const setData = (data) => {
         let { _id, nombre, apellido, email, password } = data;
         localStorage.setItem('ID', _id);
@@ -59,7 +59,7 @@ const Clientes = () =>{
         <div className="container m-5">
             <div className="text-center m-5">
                 <h1>
-                    Mis clientes
+                    Estamos en la Página de Clientes
                 </h1>
             </div>
 
