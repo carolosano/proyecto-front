@@ -1,0 +1,107 @@
+
+.about-me-section {
+    background-color: #f7e9ff; 
+    padding: 2rem; 
+    margin: 1.5rem;
+    border-radius: 10px; 
+  }
+  
+.about-me-section h1 {
+    font-size: 4rem; 
+    margin-bottom: 1rem; 
+    color: #242424; 
+}
+ 
+.about-me-section h3 {
+    font-size: 2rem; 
+    margin-bottom: 1rem; 
+    color: #242424; 
+    }
+
+    .about-me-section h2 {
+        font-size: 15px; 
+        margin-bottom: 1rem; 
+        color: #242424; 
+        }
+
+.about-me-section p {
+    font-size: 15px; 
+    line-height: 1.6; 
+    color: #242424;
+}
+
+.sobre-mi h4 {
+    color: rgb(188, 66, 213);
+}
+
+
+.grid {
+    display: grid;
+    margin: 1.5rem;
+    padding-bottom: 10rem;
+}
+  
+.grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+  
+.bg-white {
+    background-color: #dfdfdf;
+}
+  
+.p-4 {
+    padding: 1rem;
+}
+  
+.rounded-lg {
+    border-radius: 0.5rem;
+}
+  
+.shadow-lg {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+  
+.text-center {
+    text-align: center;
+}
+  
+.text-xl {
+    font-size: 1.25rem;
+    color: rgb(172, 185, 0);
+}
+  
+.font-bold {
+    font-weight: bold;
+}
+  
+.mb-2 {
+    margin-bottom: 0.5rem;
+}
+  
+.text-2xl {
+    font-size: 1.5rem;
+}
+  
+.mb-4 {
+    margin-bottom: 1rem;
+}
+  
+.text-left {
+    text-align: left;
+}
+  
+ul {
+    list-style: disc;
+    margin-left: 2rem;
+}
+  
+li {
+    margin-bottom: 0.5rem;
+}
+  
+
+@media (max-width: 640px) {
+    .grid-cols-3 {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+}
