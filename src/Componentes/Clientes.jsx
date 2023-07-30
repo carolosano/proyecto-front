@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 
 const Clientes = () =>{
 
-    const DATOS = 'https://proyecto-back-sigma.vercel.app/clientes';
+    const DATOS = import.meta.env.VITE_DATOS;
 
     console.log(DATOS);
 
