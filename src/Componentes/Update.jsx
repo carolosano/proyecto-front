@@ -35,7 +35,7 @@ const Update = () =>{
             email,
             password,
         }).then(() => {
-            navigate('/vite')
+            navigate('/clientes')
         })
     }
 

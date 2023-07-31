@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 
 const Clientes = () =>{
 
-    const DATOS = import.meta.env.VITE_DATOS
+    const DATOS = import.meta.env.VITE_DATOS;
     console.log(DATOS);
 
     const [apiData, setApiData] = useState([]);
