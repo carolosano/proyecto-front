@@ -23,7 +23,7 @@ const Update = () =>{
         setApellido(localStorage.getItem('Apellido'));
         setEmail(localStorage.getItem('Email'));
         setPassword(localStorage.getItem('Password'));
-    
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
     const updateApiData = () => {
@@ -35,7 +35,7 @@ const Update = () =>{
             email,
             password,
         }).then(() => {
-            navigate('/clientes')
+            navigate('/vite')
         })
     }
 

@@ -1,3 +1,4 @@
+
 import 'semantic-ui-css/semantic.min.css'
 import Navegacion from './Componentes/Navegacion';
 import Home from './Componentes/Home';
@@ -31,3 +32,4 @@ function App() {
 }
 
 export default App;
+

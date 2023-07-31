@@ -6,7 +6,6 @@ import { Link } from 'react-router-dom'
 const Clientes = () =>{
 
     const DATOS = import.meta.env.VITE_DATOS
-
     console.log(DATOS);
 
     const [apiData, setApiData] = useState([]);
@@ -64,7 +63,6 @@ const Clientes = () =>{
             </div>
 
             {/* tabla para mostrar a los clientes */}
-
             <Table singleLine>
                 <Table.Header>
                     <Table.HeaderCell>Nombre</Table.HeaderCell>
@@ -74,31 +72,31 @@ const Clientes = () =>{
                     <Table.HeaderCell>Delete</Table.HeaderCell>
                 </Table.Header>
                 <Table.Body>
-                    {apiData.map((data)=>{
-                        return (
-                            <Table.Row key={data._id}>
-                                <Table.Cell>{data.nombre}</Table.Cell>
-                                <Table.Cell>{data.apellido}</Table.Cell>
-                                <Table.Cell>{data.email}</Table.Cell>
+                    {apiData.map((data) => (
+                        <Table.Row key={data._id}>
+                            <Table.Cell>{data.nombre}</Table.Cell>
+                            <Table.Cell>{data.apellido}</Table.Cell>
+                            <Table.Cell>{data.email}</Table.Cell>
+                            <Table.Cell>
                                 <Link to='/update'>
-                                    <Table.Cell>
-                                        <Button onClick={() => {
-                                            setData(data)
-                                            console.log('Dato actualizado')
-                                            }}>Update</Button>
-                                    </Table.Cell>
+                                    <Button onClick={() => {
+                                        setData(data);
+                                        console.log('Dato actualizado');
+                                    }}>Update</Button>
                                 </Link>
-                                <Table.Cell>
-                                    <Button onClick={() => onDelete(data._id)}>Delete</Button>
-                                </Table.Cell>
-                            </Table.Row>
-                        )
-                    })
-                    }
+                            </Table.Cell>
+                            <Table.Cell>
+                                <Button onClick={() => onDelete(data._id)}>Delete</Button>
+                            </Table.Cell>
+                        </Table.Row>
+                    ))}
                 </Table.Body>
             </Table>
         </div>
-    )
+    );
 }
 
 export default Clientes;
+
+
+
